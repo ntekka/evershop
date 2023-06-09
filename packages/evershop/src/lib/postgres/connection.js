@@ -12,7 +12,8 @@ const connectionSetting = {
   database: getConfig('system.database.database'),
   max: 30,
   idleTimeoutMillis: 30000,
-  connectionTimeoutMillis: 2000
+  connectionTimeoutMillis: 2000,
+  ssl: {rejectUnauthorized: false}
 };
 
 // Support SSL
